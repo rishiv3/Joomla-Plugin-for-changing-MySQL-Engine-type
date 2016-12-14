@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.6" type="plugin" group="system" method="upgrade" >
+    <name>Engine Change</name>
+    <author>Rishi</author>
+    <creationDate>Dec 2016</creationDate>
+    <copyright>Copyright (C) 2016 Rishi Vishwakarma - www.rishinc.com</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only</license>
+    <authorEmail>info@rishinc.com</authorEmail>
+    <authorUrl>https://rishinc.com/</authorUrl>
+    <version>1.0.0</version>
+    <description>By this Plugin you can chang the Storage engine in the MySQL Database</description>
+    <files>
+        <filename plugin="engine_change">engine_change.php</filename>
+        <filename>engine_change.xml</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="engine" type="list"
+                       description="Select what Engine to use"
+                       label="Set Engine"
+                       default="MyISAM">
+                    <option value="InnoDB">InnoDB</option>
+                    <option value="MyISAM">MyISAM</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
