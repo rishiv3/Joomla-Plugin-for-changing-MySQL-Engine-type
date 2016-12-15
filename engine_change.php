@@ -18,7 +18,7 @@ class plgSystemEngine_change extends JPlugin
     public function onAfterInitialise()
     {
         //init vars
-        $engine_change = $this->params->get('engine_change');
+        $engine_change = $this->params->get('engine');
         $opposite = $this->getEngineType($engine_change);
 
         //set database query
